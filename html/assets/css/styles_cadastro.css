@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #20B2AA;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #008B8B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    width: 125px;
+}
+
+.navegacao a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.navegacao .btnLogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 40px;
+    transition: .4s;
+}
+
+.navegacao .btnLogin:hover {
+    background: #fff;
+    color: #008B8B;
+}
+
+.box .form-box {
+    width: 100%;
+    padding: 40px;
+    transform: translateY(10%);
+}
+
+.form-box h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box [type="date"] {
+    color: #20B2AA;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 6px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+
+.combobox select {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #20B2AA;
+}
+
+.combobox select option {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #20B2AA;
+    color: #fff;
+}
+
+.combobox p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+.aceite {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    margin: -2px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aceite label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.aceite p {
+    margin-left: 5px;
+}
+
+.aceite a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.aceite a:hover {
+    text-decoration: underline;
+}
+
+.aceite .ck-box {
+    margin: 3px 5px 13px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #008B8B;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
